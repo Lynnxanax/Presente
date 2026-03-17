@@ -55,3 +55,20 @@ margin:40px auto;
 font-size:36px;
 line-height:1.6;
 }
+
+.hidden {
+  display: none;
+}
+
+.foto {
+  width: 300px;
+  display: block;
+  margin: 30px auto;
+}
+
+.texto {
+  text-align: center;
+  color: white;
+  max-width: 500px;
+  margin: auto;
+}
