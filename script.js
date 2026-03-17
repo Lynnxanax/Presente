@@ -1,9 +1,16 @@
-function abrirCarta(){
+function abrirCarta() {
+  document.getElementById("inicio").style.display = "none";
 
-document.getElementById("envelope").style.display="none";
-document.getElementById("carta").classList.remove("hidden");
+  let animacao = document.getElementById("animacao");
+  animacao.classList.remove("hidden");
 
-let musica = document.getElementById("musica");
-musica.play();
+  setTimeout(() => {
+    animacao.style.display = "none";
 
+    let conteudo = document.getElementById("conteudo");
+    conteudo.classList.remove("hidden");
+
+    let musica = document.getElementById("musica");
+    musica.play();
+  }, 2000); // ajusta pro tempo do gif da carta abrindo
 }
